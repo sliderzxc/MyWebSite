@@ -5,10 +5,9 @@ plugins {
     alias(libs.plugins.jetbrains.compose)
     alias(libs.plugins.kobweb.application)
     alias(libs.plugins.serialization.plugin)
-    // alias(libs.plugins.kobwebx.markdown)
 }
 
-group = "com.example.demoapi"
+group = "com.sliderzxc.site"
 version = "1.0-SNAPSHOT"
 
 kobweb {
@@ -20,9 +19,9 @@ kobweb {
 }
 
 kotlin {
-    configAsKobwebApplication("demoapi", includeServer = true)
+    configAsKobwebApplication("sliderzxc-site", includeServer = true)
 
-    @Suppress("UNUSED_VARIABLE") // Suppress spurious warnings about sourceset variables not being used
+    @Suppress("UNUSED_VARIABLE")
     sourceSets {
         val commonMain by getting {
             dependencies {
@@ -36,9 +35,9 @@ kotlin {
                 implementation(libs.kobweb.core)
                 implementation(libs.kobweb.silk.core)
                 implementation(libs.kobweb.silk.icons.fa)
-                // implementation(libs.kobwebx.markdown)
             }
         }
+
         val jvmMain by getting {
             dependencies {
                 implementation(libs.kobweb.api)

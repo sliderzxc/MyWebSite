@@ -1,4 +1,4 @@
-package com.example.demoapi
+package com.sliderzxc.site
 
 import androidx.compose.runtime.*
 import com.varabyte.kobweb.compose.ui.modifiers.*
@@ -11,6 +11,7 @@ import com.varabyte.kobweb.silk.components.style.common.SmoothColorStyle
 import com.varabyte.kobweb.silk.components.style.toModifier
 
 import org.jetbrains.compose.web.css.*
+import org.jetbrains.compose.web.dom.TextInput
 
 @InitSilk
 fun updateTheme(ctx: InitSilkContext) {
