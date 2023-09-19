@@ -11,5 +11,5 @@ import com.varabyte.kobweb.silk.components.text.SpanText
 @Composable
 fun HomePage() {
     // TODO: Add content here
-    SpanText("Hello World 1232!")
+    SpanText("Hello World 132!")
 }
