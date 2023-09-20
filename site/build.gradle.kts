@@ -16,7 +16,15 @@ version = "1.0.0"
 kobweb {
     app {
         index {
-            description.set("dsds")
+            head.add {
+                link {
+                    rel = "stylesheet"
+                    href = "/highlight.js/styles/dracula.css"
+                }
+                script {
+                    src = "/highlight.js/highlight.min.js"
+                }
+            }
         }
     }
 }
@@ -24,7 +32,7 @@ kobweb {
 kotlin {
     configAsKobwebApplication("sliderzxc-site", includeServer = true)
 
-    @Suppress("UNUSED_VARIABLE") // sourceSets need to be defined for their property name
+    @Suppress("UNUSED_VARIABLE")
     sourceSets {
         val commonMain by getting {
             dependencies {
