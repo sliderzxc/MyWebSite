@@ -1,7 +1,6 @@
 import com.varabyte.kobweb.gradle.application.util.configAsKobwebApplication
 import kotlinx.html.link
 import kotlinx.html.script
-import kotlinx.html.unsafe
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
@@ -30,7 +29,7 @@ kobweb {
 }
 
 kotlin {
-    configAsKobwebApplication("sliderzxc-site", includeServer = true)
+    configAsKobwebApplication("sliderzxc-site")
 
     @Suppress("UNUSED_VARIABLE")
     sourceSets {
@@ -46,12 +45,6 @@ kotlin {
                 implementation(libs.kobweb.silk.core)
                 implementation(libs.kobweb.silk.icons.fa)
                 implementation(libs.kobwebx.markdown)
-            }
-        }
-
-        val jvmMain by getting {
-            dependencies {
-                implementation(libs.kobweb.api)
             }
         }
     }

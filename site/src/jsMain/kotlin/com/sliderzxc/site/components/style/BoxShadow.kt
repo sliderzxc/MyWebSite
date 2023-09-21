@@ -2,9 +2,9 @@ package com.sliderzxc.site.components.style
 
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.graphics.Color
-import com.varabyte.kobweb.compose.ui.modifiers.*
+import com.varabyte.kobweb.compose.ui.modifiers.boxShadow
 import com.varabyte.kobweb.silk.theme.colors.ColorMode
-import org.jetbrains.compose.web.css.*
+import org.jetbrains.compose.web.css.px
 
 fun Modifier.boxShadow(colorMode: ColorMode) = run {
     boxShadow(spreadRadius = 1.px, color = when (colorMode) {

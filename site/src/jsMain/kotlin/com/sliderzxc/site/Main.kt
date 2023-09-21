@@ -1,16 +1,27 @@
 package com.sliderzxc.site
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
+import com.sliderzxc.site.resources.UKRAINIAN
+import com.sliderzxc.site.resources.localization.EnglishStrings
+import com.sliderzxc.site.resources.localization.LocalStrings
+import com.sliderzxc.site.resources.localization.UkrainianStrings
+import com.sliderzxc.site.resources.localization.utils.getLanguage
 import com.varabyte.kobweb.compose.css.FontWeight
 import com.varabyte.kobweb.compose.css.TextAlign
 import com.varabyte.kobweb.compose.ui.Modifier
-import com.varabyte.kobweb.compose.ui.modifiers.*
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.fontFamily
+import com.varabyte.kobweb.compose.ui.modifiers.fontSize
+import com.varabyte.kobweb.compose.ui.modifiers.fontWeight
+import com.varabyte.kobweb.compose.ui.modifiers.margin
+import com.varabyte.kobweb.compose.ui.modifiers.minHeight
+import com.varabyte.kobweb.compose.ui.modifiers.textAlign
 import com.varabyte.kobweb.core.App
 import com.varabyte.kobweb.silk.SilkApp
+import com.varabyte.kobweb.silk.components.layout.AnimatedColorSurfaceVariant
 import com.varabyte.kobweb.silk.components.layout.Surface
-import com.varabyte.kobweb.silk.components.style.common.SmoothColorStyle
-import com.varabyte.kobweb.silk.components.style.toModifier
 import com.varabyte.kobweb.silk.init.InitSilk
 import com.varabyte.kobweb.silk.init.InitSilkContext
 import com.varabyte.kobweb.silk.init.registerBaseStyle
@@ -20,6 +31,7 @@ import org.jetbrains.compose.web.css.cssRem
 import org.jetbrains.compose.web.css.vh
 
 private const val COLOR_MODE_KEY = "app:colorMode"
+private const val LANGUAGE_KEY = "app:language"
 
 @InitSilk
 fun initSilk(ctx: InitSilkContext) {
@@ -53,12 +65,16 @@ fun initSilk(ctx: InitSilkContext) {
 fun MyApp(content: @Composable () -> Unit) {
     SilkApp {
         val colorMode = ColorMode.current
+        val language = getLanguage()
         LaunchedEffect(colorMode) {
             localStorage.setItem(COLOR_MODE_KEY, colorMode.name)
+            localStorage.setItem(LANGUAGE_KEY, language)
         }
 
-        Surface(SmoothColorStyle.toModifier().fillMaxWidth().minHeight(100.vh)) {
-            content()
+        CompositionLocalProvider(LocalStrings provides if(language == UKRAINIAN) UkrainianStrings else EnglishStrings) {
+            Surface(Modifier.fillMaxWidth().minHeight(100.vh), variant = AnimatedColorSurfaceVariant) {
+                content()
+            }
         }
     }
 }

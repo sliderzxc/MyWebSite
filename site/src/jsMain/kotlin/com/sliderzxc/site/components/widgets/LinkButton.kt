@@ -7,7 +7,11 @@ import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.graphics.Color
 import com.varabyte.kobweb.compose.ui.graphics.Colors
 import com.varabyte.kobweb.compose.ui.graphics.lightened
-import com.varabyte.kobweb.compose.ui.modifiers.*
+import com.varabyte.kobweb.compose.ui.modifiers.backgroundColor
+import com.varabyte.kobweb.compose.ui.modifiers.borderRadius
+import com.varabyte.kobweb.compose.ui.modifiers.color
+import com.varabyte.kobweb.compose.ui.modifiers.fontWeight
+import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.core.rememberPageContext
 import com.varabyte.kobweb.silk.components.forms.Button
 import com.varabyte.kobweb.silk.components.forms.ButtonStyle
@@ -28,7 +32,7 @@ private fun getButtonModifier(shape: ButtonShape): Modifier {
     return Modifier.padding(0.px).then(if (shape == ButtonShape.CIRCLE) {
         Modifier.borderRadius(50.percent)
     } else {
-        Modifier.padding(12.px).borderRadius(8.px)
+        Modifier.padding(12.px).fontWeight(600).borderRadius(8.px)
     })
 }
 
