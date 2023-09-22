@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="sliderzxc-site">
+    <output-path>$PROJECT_DIR$/site/build/libs</output-path>
+    <root id="archive" name="sliderzxc-site.jar">
+      <element id="module-output" name="PersonalSite.site.jvmMain" />
+    </root>
+  </artifact>
+</component>

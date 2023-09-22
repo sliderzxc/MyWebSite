@@ -1,14 +1,13 @@
 site:
-  title: "DemoApi"
+  title: "Vadym Hrynyk - Home"
 
 server:
   files:
     dev:
       contentRoot: "build/processedResources/js/main/public"
-      script: "build/developmentExecutable/demoapi.js"
-      api: "build/libs/demoapi.jar"
+      script: "build/developmentExecutable/sliderzxc-site.js"
     prod:
-      script: "build/distributions/demoapi.js"
+      script: "build/distributions/sliderzxc-site.js"
       siteRoot: ".kobweb/site"
 
   port: 8080
