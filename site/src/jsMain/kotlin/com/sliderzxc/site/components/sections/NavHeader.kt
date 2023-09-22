@@ -113,7 +113,7 @@ val NavLinkStyle = ComponentStyle("bs-nav-link") {
 fun NavHeader() {
     var colorMode by ColorMode.currentState
 
-    val selectedColor = rgb(128, 0, 128)
+    val selectedColor = rgb(0, 210, 0)
 
     Box(NavHeaderStyle.toModifier().height(72.px), contentAlignment = Alignment.Center) {
         Row(

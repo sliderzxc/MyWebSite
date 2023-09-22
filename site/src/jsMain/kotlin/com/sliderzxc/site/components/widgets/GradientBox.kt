@@ -6,14 +6,18 @@ import com.varabyte.kobweb.compose.foundation.layout.BoxScope
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.background
+import com.varabyte.kobweb.compose.ui.styleModifier
 import com.varabyte.kobweb.silk.components.style.ComponentStyle
 import com.varabyte.kobweb.silk.components.style.ComponentVariant
 import com.varabyte.kobweb.silk.components.style.base
 import com.varabyte.kobweb.silk.components.style.toModifier
+import org.jetbrains.compose.web.css.background
+
 
 val GradientBoxStyle by ComponentStyle.base {
-   Modifier
-       .background("radial-gradient(circle at calc(60%), #00b300 0, rgba(128, 0, 128, .5) 0, transparent 45%)")
+    Modifier.styleModifier {
+        background("radial-gradient(circle at calc(60%), rgba(0, 255, 0, 0.28) 0, transparent 45%)")
+    }
 }
 
 /**
