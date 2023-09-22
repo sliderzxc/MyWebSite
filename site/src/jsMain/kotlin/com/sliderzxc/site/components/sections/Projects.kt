@@ -132,8 +132,8 @@ private fun getProjects(): List<Project> {
         ),
         Project(
             LocalStrings.current.cinematicaProjectInfo,
-            "images/timemates.gif",
-            "https://github.com/CinematicaUA"
+            "images/cinematica.png",
+            "https://github.com/CinematicaTech"
         )
     )
 }

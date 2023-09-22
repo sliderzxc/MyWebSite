@@ -36,11 +36,12 @@ object EnglishStrings : Strings {
 
     override val cinematicaProjectInfo: ProjectInformation = ProjectInformation(
         name = "Cinematica",
-        description = "The application for time-management and collaboration. " +
-                "With TimeMates, you can achieve a perfect work-life balance while staying productive and efficient." +
-                " Time-boxing feature allows you to easily set up a timer that fits your schedule, whether" +
-                " you're working on a project or taking a break. TimeMates isn't just another time-management tool;" +
-                " it's a lifestyle change."
+        description = "The application for watching the movies. " +
+                "With Cinematica, you can watch the movies solo or with your friends in party. " +
+                "The application is fully free and now it's in development. " +
+                "Cinematica isn't just another application for watch movies " +
+                "it's fully free, and we have almost 70000 the best movies in the world in russian, " +
+                "ukrainian, english sound"
     )
 
     override val timeMatesProjectInfo: ProjectInformation = ProjectInformation(
