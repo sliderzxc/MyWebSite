@@ -136,13 +136,13 @@ fun NavHeader() {
                     text = LocalStrings.current.titleHome,
                 )
 
-//                Link(
-//                    modifier = NavLinkStyle
-//                        .toModifier()
-//                        .then(if(window.location.pathname.contains("/blog")) Modifier.color(selectedColor) else Modifier),
-//                    path = LocalStrings.current.blogLink,
-//                    text = LocalStrings.current.titleBlog,
-//                )
+                Link(
+                    modifier = NavLinkStyle
+                        .toModifier()
+                        .then(if(window.location.pathname.contains("/course")) Modifier.color(selectedColor) else Modifier),
+                    path = LocalStrings.current.blogLink,
+                    text = LocalStrings.current.titleCourse,
+                )
 
                 ThemedButton(
                     onClick = { colorMode = colorMode.opposite },

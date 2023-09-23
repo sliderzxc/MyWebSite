@@ -4,8 +4,8 @@ import com.sliderzxc.site.resources.localization.articles.Article
 import com.sliderzxc.site.resources.localization.projects.ProjectInformation
 
 object UkrainianStrings : Strings {
-    override val blogLink: String = "https://course.y9vad9.com/blog"
-    override val courseLink: String = "https://course.y9vad9.com/"
+    override val blogLink: String = "https://course.sliderzxc.com/"
+    override val courseLink: String = "https://course.sliderzxc.com/"
     override val titleLightTheme: String = "Світла тема"
     override val titleDarkTheme: String = "Темна тема"
     override val fullName: String = "Вадим Гриник"
@@ -26,8 +26,8 @@ object UkrainianStrings : Strings {
     override val titleScriptKt: String = "Script.kt"
     override val subtitleScriptKt: String = "Обгортка над Kotlin Scripting для кращого вивчення та використання"
     override val titleHome: String = "Головна"
-    override val titleBlog: String = "Блоґ"
-    override val subtitleBlog: String = "Збірник моїх знань й не тільки"
+    override val titleCourse: String = "Курси"
+    override val subtitleCourse: String = "Збірник моїх знань й не тільки"
     override val titleExplore: String = "Ознайомитись"
     override val titleOnlyPlanned: String = "Тільки заплановано"
 

@@ -4,8 +4,8 @@ import com.sliderzxc.site.resources.localization.articles.Article
 import com.sliderzxc.site.resources.localization.projects.ProjectInformation
 
 object EnglishStrings : Strings {
-    override val blogLink: String = "https://course.y9vad9.com/en/blog"
-    override val courseLink: String = "https://course.y9vad9.com/en/"
+    override val blogLink: String = "https://course.sliderzxc.com/en/"
+    override val courseLink: String = "https://course.sliderzxc.com/en/"
     override val titleLightTheme: String = "Light theme"
     override val titleDarkTheme: String = "Dark Theme"
     override val fullName: String = "Vadym Hrynyk"
@@ -29,8 +29,8 @@ object EnglishStrings : Strings {
     override val subtitleScriptKt: String =
         "A convenient wrapper around Kotlin Scripting feature for better experience."
     override val titleHome: String = "Home"
-    override val titleBlog: String = "Blog"
-    override val subtitleBlog: String = "A collection of my thoughts and experience notes."
+    override val titleCourse: String = "Course"
+    override val subtitleCourse: String = "A collection of my thoughts and experience notes."
     override val titleExplore: String = "Explore"
     override val titleOnlyPlanned: String = "Only planned"
 

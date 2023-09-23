@@ -38,8 +38,8 @@ interface Strings {
 
     val titleHome: String
 
-    val titleBlog: String
-    val subtitleBlog: String
+    val titleCourse: String
+    val subtitleCourse: String
 
     val titleExplore: String
     val titleOnlyPlanned: String
