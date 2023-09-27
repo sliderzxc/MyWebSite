@@ -14,7 +14,7 @@ import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
 import com.varabyte.kobweb.compose.ui.modifiers.gridRowEnd
 import com.varabyte.kobweb.compose.ui.modifiers.gridRowStart
 import com.varabyte.kobweb.compose.ui.modifiers.gridTemplateRows
-import com.y9vad9.site.components.sections.NavHeader
+import com.sliderzxc.site.components.sections.NavHeader
 import kotlinx.browser.document
 import kotlinx.browser.window
 

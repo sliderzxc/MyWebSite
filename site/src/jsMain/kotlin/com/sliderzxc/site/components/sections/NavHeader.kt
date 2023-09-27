@@ -1,4 +1,4 @@
-package com.y9vad9.site.components.sections
+package com.sliderzxc.site.components.sections
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
