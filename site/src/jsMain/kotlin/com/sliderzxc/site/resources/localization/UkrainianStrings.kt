@@ -9,7 +9,8 @@ object UkrainianStrings : Strings {
     override val titleLightTheme: String = "Світла тема"
     override val titleDarkTheme: String = "Темна тема"
     override val fullName: String = "Вадим Гриник"
-    override val description: String = "\uD83D\uDC68\uD83C\uDFFB\u200D\uD83D\uDCBB 0x11-річний Котлін розробник та викладач \uD83D\uDC68\uD83C\uDFFB\u200D\uD83C\uDFEB"
+    override val description: String =
+        "\uD83D\uDC68\uD83C\uDFFB\u200D\uD83D\uDCBB 0x10-річний Котлін розробник та викладач \uD83D\uDC68\uD83C\uDFFB\u200D\uD83C\uDFEB"
     override val titleAllMyProjects: String = "Всі проєкти"
     override val titleMyProjects: String = "Проєкти"
     override val subtitleMyProjects: String = "Мої великі та невеликі проєкти на Kotlin"
